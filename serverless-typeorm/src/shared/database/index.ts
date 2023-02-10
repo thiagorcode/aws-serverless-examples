@@ -1,4 +1,4 @@
-import {  DataSource, DataSourceOptions } from 'typeorm'
+import { DataSource, DataSourceOptions } from 'typeorm'
 import { Users } from './entities/users.entity'
 // import { SnakeNamingStrategy } from './SnakeNamingStrategy'
 
@@ -12,10 +12,10 @@ export class Database {
       const connectionOptions: DataSourceOptions = {
         name: CONNECTION_NAME,
         type: `mysql`,
-        port: 3099,
+        port: 3306,
         host: 'localhost',
-        username: 'root',
-        password: 'root',
+        username: 'serverless',
+        password: 'serverless',
         entities: [
             Users
         ],

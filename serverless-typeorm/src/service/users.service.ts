@@ -17,11 +17,6 @@ class UsersService {
     return this.usersRepository.findByUserId(userId)
   }
 
-  create() {}
-
-  update() {}
-
-  remove() {}
 }
 
 export const usersService = async (database: Database) =>{
